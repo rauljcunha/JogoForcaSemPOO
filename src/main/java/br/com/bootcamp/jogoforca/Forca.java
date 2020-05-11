@@ -14,8 +14,8 @@ public class Forca {
             case "N":
                 System.out.print(listaPalavrasNormais());
                 break;
-            case "F":
-                System.out.print(listaPalavrasFaceis());
+            case "D":
+                System.out.print(listaPalavrasDificeis());
                 break;
             default: System.out.print("Nenhuma tecla valida.");
         }
@@ -23,17 +23,17 @@ public class Forca {
     public static String listaPalavrasFaceis() {
         String[] palavras = {"banana","uva","maca"};
         Random random = new Random();
-        return palavras[random.nextInt(palavras.length-1)]
+        return palavras[random.nextInt(palavras.length)];
     }
     public static String listaPalavrasNormais() {
         String[] palavras = {"abacaxi","melancia","melao"};
         Random random = new Random();
-        return palavras[random.nextInt(palavras.length-1)]
+        return palavras[random.nextInt(palavras.length)];
     }
     public static String listaPalavrasDificeis() {
         String[] palavras = {"carambola","lichia","jatoba"};
         Random random = new Random();
-        return palavras[random.nextInt(palavras.length-1)]
+        return palavras[random.nextInt(palavras.length)];
     }
-    }
+
 }
